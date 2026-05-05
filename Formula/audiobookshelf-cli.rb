@@ -5,21 +5,21 @@
 class AudiobookshelfCli < Formula
   desc "Command-line interface for Audiobookshelf servers"
   homepage "https://github.com/LeeroyDing/audiobookshelf-cli"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.1/audiobookshelf-cli_Darwin_x86_64.tar.gz"
-      sha256 "a2af7e547a40baa83ff2be6444e6e8e43a23267adefd7a9b9b25cd308832adac"
+      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.2/audiobookshelf-cli_Darwin_x86_64.tar.gz"
+      sha256 "36da3173ec6e51341b884e4d30493cea3d58dfa9edfc08045023a0fefa109e1f"
 
       define_method(:install) do
         bin.install "abs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.1/audiobookshelf-cli_Darwin_arm64.tar.gz"
-      sha256 "e0ab146e2572cba9132ec3c7be388947179d4dd37e0d905a968fe72adef6199f"
+      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.2/audiobookshelf-cli_Darwin_arm64.tar.gz"
+      sha256 "a25ac0f13892cc0b7b72573a314311d8e2101f167828d0d72dfec52bccb55d1d"
 
       define_method(:install) do
         bin.install "abs"
@@ -29,15 +29,15 @@ class AudiobookshelfCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.1/audiobookshelf-cli_Linux_x86_64.tar.gz"
-      sha256 "5ac6b138868295a59891077e39b21f7ef052cffce3e1c5cbe68027d1bc10965c"
+      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.2/audiobookshelf-cli_Linux_x86_64.tar.gz"
+      sha256 "f4c3e407a37a445525327d7ad9eb721d3d2eb0df40140f896f0d7fe57de916f3"
       define_method(:install) do
         bin.install "abs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.1/audiobookshelf-cli_Linux_arm64.tar.gz"
-      sha256 "a40a9c5e7b210217b470402ca79ae592b9a5d07cc8fe783115f24b8a073b1e03"
+      url "https://github.com/LeeroyDing/audiobookshelf-cli/releases/download/v1.3.2/audiobookshelf-cli_Linux_arm64.tar.gz"
+      sha256 "7aad31bc834496720d32def870fd9737ae1a842ac6375e31f7d5a4e5acd085f2"
       define_method(:install) do
         bin.install "abs"
       end
