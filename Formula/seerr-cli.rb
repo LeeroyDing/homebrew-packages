@@ -5,21 +5,21 @@
 class SeerrCli < Formula
   desc "Command-line interface for Seerr and Overseerr media managers"
   homepage "https://github.com/LeeroyDing/seerr-cli"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.0/seerr-cli_Darwin_x86_64.tar.gz"
-      sha256 "e77a7f97ed77f53aae2cb71324074d9f9f1d4699974907f5b5f1e6669176b3f1"
+      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.1/seerr-cli_Darwin_x86_64.tar.gz"
+      sha256 "e79dfcc96162ce60c44a46f9018c87b3dd3733afb46e40fdec26640d1195796a"
 
       define_method(:install) do
         bin.install "seerr-cli" => "seerr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.0/seerr-cli_Darwin_arm64.tar.gz"
-      sha256 "7ba69f7e8a93aaf0914072d97f86e5eb793136622596604cf304e9b7cc16c323"
+      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.1/seerr-cli_Darwin_arm64.tar.gz"
+      sha256 "737be14fb070dd4f1f41167e66baecd6bd0d2e0f4fa36b0232bb153aaf76a674"
 
       define_method(:install) do
         bin.install "seerr-cli" => "seerr"
@@ -29,15 +29,15 @@ class SeerrCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.0/seerr-cli_Linux_x86_64.tar.gz"
-      sha256 "2b9e693e66dcaade96e8b97a89aec6622792aaa78f525042ec575891a33c304c"
+      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.1/seerr-cli_Linux_x86_64.tar.gz"
+      sha256 "72e7a9a7a522758a91bcc510624a980613c151b10939de4fc4696a850d698c29"
       define_method(:install) do
         bin.install "seerr-cli" => "seerr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.0/seerr-cli_Linux_arm64.tar.gz"
-      sha256 "4145eabaa56a7017d6443f4505ad1dcc333b79372f29407999d8d73e2ae488da"
+      url "https://github.com/LeeroyDing/seerr-cli/releases/download/v0.11.1/seerr-cli_Linux_arm64.tar.gz"
+      sha256 "8db81293f87792a83df74a5e02922230f9e9b9318ccdfef04ff3dd31cb656c83"
       define_method(:install) do
         bin.install "seerr-cli" => "seerr"
       end
